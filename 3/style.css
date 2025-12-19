@@ -1,0 +1,102 @@
+/* schedule.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+
+.schedule-wrapper {
+    width: 650px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 20px 25px 25px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* верхняя панель */
+
+.top-bar {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.tab {
+    padding: 6px 12px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.tab.brown  { background: #b58a55; }
+.tab.blue   { background: #4ba3ff; margin-left: 2px; }
+.tab.yellow { background: #ffc94b; margin-left: 2px; }
+
+/* поиск и фильтры */
+
+.search-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#subject-search {
+    flex: 1;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#btn-search {
+    width: 40px;
+    border: none;
+    background: #b58a55;
+    color: #fff;
+    cursor: pointer;
+}
+
+.filters-row {
+    margin-bottom: 10px;
+}
+
+.filters-row select {
+    padding: 5px 8px;
+    margin-right: 5px;
+}
+
+/* список пар */
+
+#lessons-list {
+    margin-top: 10px;
+}
+
+.lesson-row {
+    display: flex;
+    background: #b58a55;
+    color: #ffffff;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.lesson-col {
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+.lesson-col.subj {
+    flex: 1;
+}
+
+.lesson-col.room {
+    background: #2fa548;
+    min-width: 80px;
+    text-align: center;
+}
+
+/* аккордеон */
+
+.accordion {
+    background: #f5f5f5;
+    padding: 8px 10px;
+    margin: -4px 0 6px;
+    font-size: 13px;
+}

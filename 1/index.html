@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>AJAX Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="search-widget">
+  <div class="search-bar">
+    <input type="text" id="search-input" placeholder="AJAX Search">
+    <button id="search-btn">🔍</button>
+  </div>
+
+  <div class="results-box">
+    <div class="results-header">Table Results</div>
+    <ul id="results-list"></ul>
+    <button id="load-more" style="display:none">Загрузить ещё</button>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="search.js"></script>
+</body>
+</html>

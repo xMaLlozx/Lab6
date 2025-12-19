@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>NEWS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="news-wrapper">
+  <h1>NEWS</h1>
+
+  <input type="text" id="news-search" placeholder="Поиск по новостям">
+
+  <div id="news-container"></div>
+
+  <div id="pagination" class="pagination"></div>
+</div>
+
+<!-- модальное окно -->
+<div id="news-modal">
+  <div class="modal-content">
+    <span id="modal-close">&times;</span>
+    <h2 id="modal-title"></h2>
+    <p id="modal-text"></p>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="news.js"></script>
+</body>
+</html>

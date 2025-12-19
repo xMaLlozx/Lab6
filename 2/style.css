@@ -1,0 +1,139 @@
+/* news.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.news-wrapper {
+    width: 600px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 20px 25px 25px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.news-wrapper h1 {
+    text-align: center;
+    color: #b58a55;
+    margin-top: 0;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+#news-search {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* блоки новостей */
+
+#news-container {
+    margin-bottom: 15px;
+}
+
+.news-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0 18px;
+    position: relative;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-title {
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.news-short {
+    font-size: 14px;
+    color: #666;
+    padding-right: 90px; /* чтобы текст не упирался в кнопку More info */
+}
+
+.news-more {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    color: #b58a55;
+    cursor: pointer;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+/* пагинация */
+
+.pagination {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pagination span {
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 0 2px;
+    background: #eeeeee;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.pagination span.active {
+    background: #b58a55;
+    color: #ffffff;
+}
+
+.pagination span.disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+/* модальное окно */
+
+#news-modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+#news-modal .modal-content {
+    background: #ffffff;
+    width: 500px;
+    margin: 60px auto;
+    padding: 20px 25px 25px;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#modal-close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#modal-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#modal-text {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Расписание</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="schedule-wrapper">
+  <div class="top-bar">
+    <div class="tab brown">Расписание</div>
+    <div class="tab blue" id="current-date"></div>
+    <div class="tab yellow" id="week-type" title=""></div>
+  </div>
+
+  <div class="search-row">
+    <input type="text" id="subject-search" placeholder="Поиск предмета">
+    <button id="btn-search">🔍</button>
+  </div>
+
+  <div class="filters-row">
+    <select id="course">
+      <option value="">Курс</option>
+      <option value="1">1 курс</option>
+      <option value="2">2 курс</option>
+    </select>
+    <select id="group">
+      <option value="">Группа</option>
+      <option value="ИВТ-3">ИВТ-3</option>
+    </select>
+    <select id="day">
+      <option value="">День</option>
+      <option value="monday">Понедельник</option>
+      <option value="tuesday">Вторник</option>
+      <option value="wednesday">Среда</option>
+      <option value="thursday">Четверг</option>
+      <option value="friday">Пятница</option>
+    </select>
+  </div>
+
+  <div id="lessons-list"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="schedule.js"></script>
+</body>
+</html>

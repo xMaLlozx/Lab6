@@ -1,0 +1,10 @@
+body { font-family: Arial, sans-serif; background:#f2f2f2; }
+.search-widget { width:400px; margin:40px auto; padding:20px; background:#fff; border-radius:6px; }
+.search-bar { display:flex; margin-bottom:15px; }
+.search-bar input { flex:1; padding:8px; }
+.search-bar button { width:40px; background:#b68b53; color:#fff; border:none; }
+.results-box { background:#eee; padding:10px; }
+.results-header { background:#b68b53; color:#fff; padding:5px 10px; margin:-10px -10px 10px -10px; }
+#results-list { list-style:none; padding:0; margin:0; }
+#results-list li { padding:3px 0; color:#555; }
+#load-more { margin-top:10px; padding:5px 10px; }
